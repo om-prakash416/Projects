@@ -1,0 +1,91 @@
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: gray;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    max-width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    /* height: 100vh; */
+}
+
+form {
+    margin-bottom: 20px;
+    
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+button[type=submit]{
+    margin-top: 10px;
+    justify-content: center;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding: 5px;
+        color: white;
+        background-color: blue;
+        outline: none;
+        border-radius: 5px;
+        max-width: max-content;
+        font-weight: bold;
+       
+        margin-top: 50px;
+    
+}
+.edit-btn {
+    color: white;
+    background-color:#008000;
+    font-weight: bold;
+
+}
+.delete-btn {
+    color: white;
+    background-color: red;
+    font-weight: bold;
+}
+
+#total-expense {
+    margin-top: 20px;
+    font-weight: bold;
+}
+label {
+    font-weight: bold;
+    padding: 10px;
+}
+
+input[type=number] {
+
+    margin-left: 20px;
+}
+
+input {
+    margin-top: 20px;
+    outline: none;
+    padding: 4px;
+}
+
+input[type=date] {
+
+    margin-left: 45px;
+}
+#expense-list{
+    font-weight: bold;
+}

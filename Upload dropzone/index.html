@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>File Upload Dropzone </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    </head>
+
+    <body>
+
+        <form class="dropzone-box">
+            <h2 class="">Upload and Attach files</h2>
+            <p>Attach files to this project</p>
+            <div class="dropzone-area">
+                <div class="file-upload-icon">
+                    <img src="cloud-computing.png">
+                    <p>Click to upload or drag and drop</p>
+                    <input type="file" required id="upload-file" name="upload-file">
+                    <p class="message">No Files Selected</p>
+                </div>
+                <div class="dropzone-actions">
+                    <button class="" type="reset">Cancle</button>
+                    <button type="submit" id="submit-button">Save</button>
+                </div>
+            </div>
+
+        </form>
+
+        <script src="./script.js"></script>
+    </body>
+
+</html>

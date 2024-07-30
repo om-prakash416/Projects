@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Company Employee Tracker</title>
+        <script src="popup.js" defer></script>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                margin: 0;
+                padding: 20px;
+                box-sizing: border-box;
+            }
+
+            h2,
+            h3 {
+                color: #333;
+            }
+
+            #login-form,
+            #admin-dashboard,
+            #employee-dashboard,
+            #add-user-form,
+            #view-activities-form,
+            #view-my-activities-form {
+                margin: 20px 0;
+                padding: 20px;
+                background-color: #fff;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+
+            input[type="text"],
+            input[type="password"] {
+                width: calc(100% - 22px);
+                padding: 10px;
+                margin-bottom: 10px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+            }
+
+            button {
+                display: block;
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border: none;
+                border-radius: 3px;
+                background-color: #007bff;
+                color: #fff;
+                font-size: 16px;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: #0056b3;
+            }
+
+            #error-message,
+            #user-error-message {
+                color: red;
+                display: none;
+            }
+
+            #activities-list,
+            #my-activities-list {
+                margin-top: 10px;
+            }
+
+            #activities-list div,
+            #my-activities-list div {
+                padding: 5px;
+                border-bottom: 1px solid #ddd;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="login-form">
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button id="login-button">Login</button>
+            <div id="error-message"></div>
+        </div>
+
+        <div id="admin-dashboard" style="display: none;">
+            <h2>Welcome Admin!</h2>
+            <button id="add-user-button">Add User</button>
+            <button id="view-activities-button">View All Activities</button>
+        </div>
+
+        <div id="employee-dashboard" style="display: none;">
+            <h2>Welcome Employee!</h2>
+            <button id="clock-in-button">Clock In</button>
+            <button id="clock-out-button">Clock Out</button>
+            <button id="view-my-activities-button">View My Activities</button>
+        </div>
+
+        <div id="add-user-form" style="display: none;">
+            <h3>Add New User</h3>
+            <input type="text" id="new-username" placeholder="Username">
+
+            <input type=" password" id="new-password" placeholder="Password">
+            <button id="submit-user-button">Add User</button>
+            <div id="user-error-message"></div>
+        </div>
+
+        <div id="view-activities-form" style="display: none;">
+            <h3>All Activities</h3>
+            <div id="activities-list"></div>
+        </div>
+
+        <div id="view-my-activities-form" style="display: none;">
+            <h3>My Activities</h3>
+            <div id="my-activities-list"></div>
+        </div>
+    </body>
+
+</html>
